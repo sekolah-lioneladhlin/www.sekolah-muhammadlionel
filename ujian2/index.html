@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMK Negeri 7 Batam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- Reset & Base ---------- */
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* ---------- Top bar ---------- */
+    .topbar{background:black;color:#fff;padding:6px 14px;font-size:14px;display:flex;justify-content:space-between;align-items:center}
+    .topbar .left{display:flex;gap:12px;align-items:center}
+    .topbar .right{font-size:13px;opacity:0.95}
+
+    /* ---------- Header / Nav ---------- */
+    header{background:#fff;box-shadow:0 3px 10px rgba(10,20,30,0.06)}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand .logo{width:64px;height:64px;border-radius:8px;overflow:hidden;background:#e6eef6;display:flex;align-items:center;justify-content:center;font-weight:800;color:#0b4d7a}
+    nav ul{display:flex;gap:18px;align-items:center;margin:0;padding:0;list-style:none}
+    .btn-primary{background:#0b4d7a;color:#fff;padding:8px 14px;border-radius:8px;font-weight:600}
+
+    /* ---------- Hero ---------- */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center;padding:34px 0}
+    .hero .kicker{color:#0b4d7a;font-weight:700;margin-bottom:10px}
+    .hero h1{font-size:30px;margin:0 0 12px}
+    .hero p{color:#444;line-height:1.5}
+    .hero .cta{margin-top:18px}
+    .hero .card{background:#fff;border-radius:10px;padding:18px;box-shadow:0 6px 20px rgba(10,20,30,0.06)}
+
+    /* ---------- Sections ---------- */
+    section{padding:26px 0;border-top:1px solid #f1f5f8}
+    .section-title{display:flex;justify-content:space-between;align-items:end;margin-bottom:14px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .card-news{background:#fff;border-radius:8px;padding:12px;box-shadow:0 6px 18px rgba(10,20,30,0.04)}
+    .badge{display:inline-block;padding:6px 8px;border-radius:999px;background:#f0f8ff;color:#0b4d7a;font-weight:700;font-size:13px}
+
+    /* ---------- Gallery ---------- */
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+
+    /* ---------- Footer ---------- */
+    footer{background:#0b4d7a;color:#fff;padding:26px 0;margin-top:24px}
+    footer .cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+
+    /* ---------- Responsive ---------- */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      footer .cols{grid-template-columns:1fr}
+    }
+    @media (max-width:520px){
+      nav ul{display:none}
+      .brand .logo{width:48px;height:48px}
+      .grid-3{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">SMK7</div>
+        <div>
+          <div style="font-weight:800">SMK Negeri 7 Batam</div>
+          <div style="font-size:13px;color:#666">Sekolah Menengah Kejuruan — Batam</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#jurusan">Jurusan</a></li>
+          <li><a href="#berita">Berita</a></li>
+          <li><a href="#kontak" class="btn-primary">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="container">
+    <section class="hero" id="home">
+      <div>
+        <div class="kicker">Selamat Datang di</div>
+        <h1>SMK Negeri 7 Batam</h1>
+        <p>SMK Negeri 7 Batam Mewujudkan Peserta Didik yang Beriman, Bertaqwa kepada
+TUHAN YANG MAHA ESA dan Berakhlak Mulia, Terampil, Unggul, dan Berdaya Saing
+Global di Era Teknologi Digital.</p>
+        <div class="cta">
+          <a class="btn-primary" href="#profil">Pelajari Lebih Lanjut</a>
+        </div>
+
+        <div style="margin-top:20px;display:flex;gap:12px;align-items:center">
+          </div>
+          <div class="card" style="width:180px">
+            <div style="font-size:12px;color:#888">Siswa</div>
+            <div style="font-weight:800;font-size:20px">0</div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Profil singkat -->
+    <section id="profil">
+      <div class="section-title">
+        <h3>IDENTITAS SEKOLAH</h3>
+        <a href="#profil">Selengkapnya →</a>
+      </div>
+      <li>Akreditasi : A</li>
+<li>Kurikulum : Kurikulum Merdeka</li>
+<li>NPSN : 69774885</li>
+<li>Status : Negeri</li>
+<li>Bentuk Pendidikan : SMK</li>
+<li>Status Kepemilikan : Pemerintah Daerah</li>
+<li>SK Pendirian Sekolah : KPTS.367/HK/IX/2014</li>
+<li>Tanggal SK Pendirian : 2014-09-05</li>
+<li>SK Izin Operasional : KPTS.367/HK/IX/2014</li>
+<li>Tanggal SK Izin Operasional : 2015-10-23</li>
+      <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+        <div style="flex:1;min-width:250px">
+          <p>SMK Negeri 7 Batam adalah sekolah kejuruan yang berfokus pada pengembangan kompetensi siswa agar siap kerja di industri. Kurikulum dikembangkan bersinergi dengan dunia industri lokal.</p>
+        </div>
+        <div style="width:260px">
+          <div class="card">
+            <div style="font-weight:700">Visi</div>
+            <div style="font-size:13px;color:#666">Menjadi lembaga pendidikan vokasi unggul dan terakreditasi.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jurusan -->
+    <section id="jurusan">
+      <div class="section-title">
+        <h3>Jurusan Unggulan</h3>
+        <a href="#jurusan">Lihat Semua →</a>
+      </div>
+      <div class="grid-3">
+        <div class="card-news">
+          <div class="badge">DKV</div>
+          <h4>desain Komunikasi Sosial</h4>
+            <p>Desain grafis, ilustrasi, branding, dan media digital.</p>
+        <div class="card-news">
+          <div class="badge">RPL</div>
+          <h4>Rekayasa Perangkat Lunak</h4>
+            <p>Pengembangan aplikasi web, mobile, dan sistem informasi.</p>
+        </div>
+        <div class="card-news">
+          <div class="badge">TITL</div>
+          <h4>Teknik Instalasi Tenaga Listrik</h4>
+            <p>Instalasi listrik gedung, industri, dan sistem tenaga listrik.</p>
+        </div>
+        <div class="card-news">
+          <div class="badge">TKJ</div>
+          <h4>Teknik Komputer dan Jaringan</h4>
+            <p>Administrasi jaringan, keamanan siber, dan infrastruktur IT.</p>
+      </div>
+    </section>
+    <!-- Kontak -->
+    <section id="kontak">
+      <div class="section-title">
+        <h3>Kontak</h3>
+        <a href="#kontak">Hubungi Kami →</a>
+      </div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <form onsubmit="alert('Form contoh — ganti dengan backend Anda.'); return false;">
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <input type="text" placeholder="Nama" required style="padding:10px;border-radius:8px;border:1px solid #e6eef6">
+              <input type="email" placeholder="Email" required style="padding:10px;border-radius:8px;border:1px solid #e6eef6">
+              <textarea placeholder="Pesan" rows="5" style="padding:10px;border-radius:8px;border:1px solid #e6eef6"></textarea>
+              <button class="btn-primary" type="submit">Kirim Pesan</button>
+            </div>
+          </form>
+        </div>
+
+        <div style="width:320px">
+          <div class="card">
+            <div style="font-weight:700">Alamat</div>
+            <div style="font-size:13px;color:#666">Perum Sekawan Pemko</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap">
+        <div>
+          <div style="font-weight:800">SMK Negeri 7 Batam</div>
+          <div style="font-size:13px;color:#dbeaf8">Hak Cipta © 2025 — SMK Negeri 7</div>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <a href="#" style="color:#fff;font-size:13px">Sitemap</a>
+          <a href="#" style="color:#fff;font-size:13px">Kebijakan Privasi</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
